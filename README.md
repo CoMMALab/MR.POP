@@ -1,6 +1,6 @@
-##MR. POP: MR. POP: Multi-Robot Parallel Optimizing Planner for Almost-Surely Asymptotically Optimal Planning
+# MR. POP: MR. POP: Multi-Robot Parallel Optimizing Planner for Almost-Surely Asymptotically Optimal Planning
 
-# This README is still under construction, do not worry we'll be back
+## This README is still under construction, do not worry we'll be back
 
 This repo holds the code for the paper "MR. POP: Multi-Robot Parallel Optimizing Planner for Almost-Surely Asymptotically Optimal Planning." 
 
