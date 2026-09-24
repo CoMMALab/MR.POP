@@ -13,7 +13,7 @@ cmake --build build
 ```
 
 ## Running Benchmarks
-MR. POP currently has two sets of benchmarks. The first is a set of 50 bin packing problems with four Frankas in the scene, totaling 28 degrees of freedom. The second is a set of 50 shelf reaching problems with five Frankas in the scene, totaling 35 degrees of freedom. The problems were based on the xECBS benchmark.
+MR. POP currently has two sets of benchmarks. The first is a set of 50 bin packing problems with four Frankas in the scene, totaling 28 degrees of freedom. The second is a set of 50 shelf reaching problems with five Frankas in the scene, totaling 35 degrees of freedom. The problems were based on the xECBS planner [benchmark](https://arxiv.org/html/2404.00143v1).
 
 To run the four Franka benchmark:
 ```
