@@ -14,3 +14,13 @@ cmake --build build
 
 ## Running Benchmarks
 MR. POP currently has two sets of benchmarks. The first is a set of 50 bin packing problems with four Frankas in the scene, totaling 28 degrees of freedom. The second is a set of 50 shelf reaching problems with five Frankas in the scene, totaling 35 degrees of freedom. The problems were based on the xECBS benchmark.
+
+To run the four Franka benchmark:
+```
+build/evaluate_mr panda_four <experiment name>
+```
+
+To run the five Franka benchmark:
+```
+build/evaluate_mr panda_five <experiment name>
+```
