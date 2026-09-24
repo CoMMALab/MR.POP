@@ -1,4 +1,4 @@
-# MR. POP: MR. POP: Multi-Robot Parallel Optimizing Planner for Almost-Surely Asymptotically Optimal Planning
+# MR. POP
 
 This README is still under construction, do not worry we'll be back.
 
