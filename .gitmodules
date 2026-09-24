@@ -1,0 +1,3 @@
+[submodule "extern/vamp"]
+	path = extern/vamp
+	url = https://github.com/KavrakiLab/vamp.git

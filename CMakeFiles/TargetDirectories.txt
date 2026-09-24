@@ -1,0 +1,5 @@
+/home/chih/pRRTC_MR/CMakeFiles/evaluate_mr.dir
+/home/chih/pRRTC_MR/CMakeFiles/edit_cache.dir
+/home/chih/pRRTC_MR/CMakeFiles/rebuild_cache.dir
+/home/chih/pRRTC_MR/_deps/json-build/CMakeFiles/edit_cache.dir
+/home/chih/pRRTC_MR/_deps/json-build/CMakeFiles/rebuild_cache.dir

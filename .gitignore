@@ -1,0 +1,14 @@
+build
+problems.pkl
+*.out
+*.json
+*.sqlite
+*.nsys-rep
+Pipfile
+Pipfile.lock
+test_output
+plots
+*.csv
+.python-version
+*.sh_deps/
+cmake_install.cmake
