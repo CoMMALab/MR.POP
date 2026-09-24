@@ -8,6 +8,7 @@ This repo holds the code for "MR. POP: Multi-Robot Parallel Optimizing Planner f
 To build MR. POP, follow the instructions below
 ```
 git clone git@github.com:CoMMALab/MR.POP.git
+cd MR.POP
 cmake -B build
 cmake --build build
 ```
