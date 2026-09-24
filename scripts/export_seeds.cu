@@ -1,16 +1,3 @@
-// Run the pRRTC (AO-RRT-Connect) planner on the panda_four benchmark and export
-// its collision-free geometric paths as plain-text seed files that cuRobo's
-// trajectory optimizer can consume (see curobo/seed_from_path.py).
-//
-// This is the "generate paths" half of the asao -> cuRobo pipeline. It differs
-// from evaluate_mr.cu in two ways:
-//   (1) it writes one seed file per problem (28 joint values per line, radians)
-//       instead of a benchmark CSV, and
-//   (2) it runs the planner as an OPTIMIZING planner (rrtc_iter > 1) and, thanks
-//       to PlannerResult::seed_paths, also dumps every improving solution it
-//       found along the way -- so a downstream optimizer can pick among several
-//       seeds, preferring the shorter ones.
-//
 // Output layout (out_dir):
 //   <name>.txt                          final (best / shortest) path
 //   <name>__k00__cost<c>.txt            initial solution      (rrtc_iter 0)
@@ -136,7 +123,6 @@ void run_export(const json& problems, pRRTC_settings& settings,
 
         PlannerResult<Robot> result;
         if (robot_name == "panda_four") result = pRRTC::solve<Robot>(start, goals, env, settings, 4, 8);
-        else if (robot_name == "panda_dual") result = pRRTC::solve<Robot>(start, goals, env, settings, 2, 2);
         else if (robot_name == "panda_five") result = pRRTC::solve<Robot>(start, goals, env, settings, 5, 8);
 
         if (not result.solved) {
@@ -206,9 +192,7 @@ int main(int argc, char* argv[]) {
     }
     json problems = json::parse(f);
 
-    if (robot_name == "panda_dual") {
-        run_export<robots::Panda_dual>(problems, settings, out_dir, robot_name);
-    } else if (robot_name == "panda_four") {
+    if (robot_name == "panda_four") {
         run_export<robots::Panda_four>(problems, settings, out_dir, robot_name);
     } else if (robot_name == "panda_five") {
         run_export<robots::Panda_five>(problems, settings, out_dir, robot_name);
