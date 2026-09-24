@@ -137,7 +137,6 @@ void run_planning(const json &problems, pRRTC_settings &settings, std::string ru
         std::cout << "index: " << data["source_index"] << "\n";
 
         if (robot_name=="panda_four") result = pRRTC::solve<Robot>(start, goals, env, settings, 4, 8);
-        else if (robot_name=="panda_dual") result = pRRTC::solve<Robot>(start, goals, env, settings, 2, 2);
         else if (robot_name=="panda_five") result = pRRTC::solve<Robot>(start, goals, env, settings, 5, 8);
         
         for (auto& cfg: result.path) {
@@ -189,9 +188,7 @@ int main(int argc, char* argv[]) {
     std::ifstream f(path);
     json problems = json::parse(f);
     //json problems = all_data["problems"];
-    if (robot_name == "panda_dual") {
-        run_planning<robots::Panda_dual>(problems, settings, run_name, robot_name);
-    } else if (robot_name == "panda_four") {
+    if (robot_name == "panda_four") {
         run_planning<robots::Panda_four>(problems, settings, run_name, robot_name);
     } else if (robot_name == "panda_five"){
         run_planning<robots::Panda_five>(problems, settings, run_name, robot_name);
