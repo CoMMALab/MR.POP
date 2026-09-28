@@ -1,3 +1,4 @@
+[![arXiv POP](https://img.shields.io/badge/arXiv-2609.30644-b31b1b.svg)](https://arxiv.org/abs/2609.30644)
 # MR. POP
 
 This README is still under construction, do not worry we'll be back.
