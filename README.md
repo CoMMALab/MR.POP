@@ -1,4 +1,6 @@
 [![arXiv POP](https://img.shields.io/badge/arXiv-2609.30644-b31b1b.svg)](https://arxiv.org/abs/2609.30644)
+[![Video](https://img.shields.io/badge/Video-YouTube-FF0000.svg?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=TOUWF6pqbAw)
+
 # MR. POP
 
 This README is still under construction, do not worry we'll be back.
