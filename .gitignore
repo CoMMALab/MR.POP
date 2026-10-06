@@ -1,0 +1,25 @@
+# Build products, including accidental builds in the repository root.
+/build/
+/build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/build.ninja
+/.ninja_deps
+/.ninja_log
+/cmake_install.cmake
+
+# Planning results and profiler output.
+/test_output/
+/plots/
+*.csv
+*.out
+*.sqlite
+*.nsys-rep
+
+# Local Python environments and operating-system files.
+.venv/
+__pycache__/
+*.pyc
+.python-version
+.DS_Store
