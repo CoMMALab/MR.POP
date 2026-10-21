@@ -21,9 +21,7 @@ magnitude faster.
 ## Build
 
 The existing compiler settings target **CUDA architecture 120**. Adjust the
-setting in `CMakeLists.txt` when building for different hardware. CUDA separable
-compilation is enabled so the planner and path simplifier can share device
-state and collision routines across their compilation units.
+setting in `CMakeLists.txt` when building for different hardware.
 
 ```sh
 cmake -S . -B build
