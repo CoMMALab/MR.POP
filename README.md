@@ -76,8 +76,7 @@ export_seeds <robot_name> <out_dir> [rrtc_iter] [optimize_iters]
 
 `rrtc_iter` defaults to 6; 1 requests the initial solve only, while larger
 values add optimizing passes. `optimize_iters` defaults to 400000 and sets the
-iteration budget for those optimizing passes. The exporter explicitly enables
-PHS sampling and path simplification.
+iteration budget for those optimizing passes. 
 
 ## Code layout
 
